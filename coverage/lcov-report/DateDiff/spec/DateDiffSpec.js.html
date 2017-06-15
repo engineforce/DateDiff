@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for DateDiff\spec\DateDiffSpec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">DateDiff/spec/</a> DateDiffSpec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>93/93</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>93/93</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var dateDiff = require("../dateDiff");
+&nbsp;
+describe("Date Diff", function () {
+    it("Invalid inputs", function () {
+        expect(() =&gt; {
+            dateDiff(0, 1);
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("0", "1");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("01 01 1899", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("01 01 1800", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("01 21 1900", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("41 01 1900", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("41 02 1900", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("30 02 2008", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("-1 02 2008", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("30 02 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("32 01 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("32 03 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("31 04 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("32 08 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("32 09 2000", "01 01 1900");
+        }).toThrowError(/not a valid input/);
+&nbsp;
+        expect(() =&gt; {
+            dateDiff("01 01 1900", "32 09 2000");
+        }).toThrowError(/not a valid input/);
+    });
+&nbsp;
+    it("Valid non leap year inputs", function () {
+        expect(dateDiff("01 01 1900", "01 01 1900")).toBe(0);
+        expect(dateDiff("01 01 1900", "01 02 1900")).toBe(31);        
+        expect(dateDiff("01 01 1900", "01 03 1900")).toBe(59);
+        expect(dateDiff("01 01 1900", "01 04 1900")).toBe(90);
+        expect(dateDiff("01 01 1900", "01 05 1900")).toBe(120);
+        expect(dateDiff("01 01 1900", "01 06 1900")).toBe(151);
+        expect(dateDiff("01 01 1900", "01 07 1900")).toBe(181);
+        expect(dateDiff("01 01 1900", "01 08 1900")).toBe(212);
+        expect(dateDiff("01 01 1900", "01 09 1900")).toBe(243);
+        expect(dateDiff("01 01 1900", "01 10 1900")).toBe(273);
+        expect(dateDiff("01 01 1900", "01 11 1900")).toBe(304);
+        expect(dateDiff("01 01 1900", "01 12 1900")).toBe(334);
+        expect(dateDiff("01 01 1900", "01 01 1901")).toBe(365);
+        expect(dateDiff("01 01 1900", "31 01 1900")).toBe(30);
+        expect(dateDiff("01 01 1900", "28 02 1900")).toBe(58);        
+        expect(dateDiff("01 01 1900", "31 03 1900")).toBe(89);
+        expect(dateDiff("01 01 1900", "30 04 1900")).toBe(119);
+        expect(dateDiff("01 01 1900", "31 05 1900")).toBe(150);
+        expect(dateDiff("01 01 1900", "30 06 1900")).toBe(180);
+        expect(dateDiff("01 01 1900", "31 07 1900")).toBe(211);
+        expect(dateDiff("01 01 1900", "31 08 1900")).toBe(242);
+        expect(dateDiff("01 01 1900", "30 09 1900")).toBe(272);
+        expect(dateDiff("01 01 1900", "31 10 1900")).toBe(303);
+        expect(dateDiff("01 01 1900", "30 11 1900")).toBe(333);
+        expect(dateDiff("01 01 1900", "31 12 1900")).toBe(364);
+    });
+&nbsp;
+    it("Valid leap year inputs", function () {
+        expect(dateDiff("01 01 1908", "01 01 1908")).toBe(0);
+        expect(dateDiff("01 01 1908", "01 02 1908")).toBe(31);        
+        expect(dateDiff("01 01 1908", "01 03 1908")).toBe(60);
+        expect(dateDiff("01 01 1908", "01 04 1908")).toBe(91);
+        expect(dateDiff("01 01 1908", "01 05 1908")).toBe(121);
+        expect(dateDiff("01 01 1908", "01 06 1908")).toBe(152);
+        expect(dateDiff("01 01 1908", "01 07 1908")).toBe(182);
+        expect(dateDiff("01 01 1908", "01 08 1908")).toBe(213);
+        expect(dateDiff("01 01 1908", "01 09 1908")).toBe(244);
+        expect(dateDiff("01 01 1908", "01 10 1908")).toBe(274);
+        expect(dateDiff("01 01 1908", "01 11 1908")).toBe(305);
+        expect(dateDiff("01 01 1908", "01 12 1908")).toBe(335);
+        expect(dateDiff("01 01 1908", "01 01 1909")).toBe(366);
+        expect(dateDiff("01 01 1908", "31 01 1908")).toBe(30);
+        expect(dateDiff("01 01 1908", "29 02 1908")).toBe(59);        
+        expect(dateDiff("01 01 1908", "31 03 1908")).toBe(90);
+        expect(dateDiff("01 01 1908", "30 04 1908")).toBe(120);
+        expect(dateDiff("01 01 1908", "31 05 1908")).toBe(151);
+        expect(dateDiff("01 01 1908", "30 06 1908")).toBe(181);
+        expect(dateDiff("01 01 1908", "31 07 1908")).toBe(212);
+        expect(dateDiff("01 01 1908", "31 08 1908")).toBe(243);
+        expect(dateDiff("01 01 1908", "30 09 1908")).toBe(273);
+        expect(dateDiff("01 01 1908", "31 10 1908")).toBe(304);
+        expect(dateDiff("01 01 1908", "30 11 1908")).toBe(334);
+        expect(dateDiff("01 01 1908", "31 12 1908")).toBe(365);
+    });
+&nbsp;
+    it("Valid other inputs", function () {
+        expect(dateDiff("01 02 1900", "01 03 1900")).toBe(28);
+        expect(dateDiff("1 1 2012", "1 1 2013")).toBe(366);
+        expect(dateDiff("1 1 2000", "15 6 2017")).toBe(6375);
+        expect(dateDiff("1 1 1900", "15 6 2017")).toBe(42899);
+        expect(dateDiff("1 1 1900", "31 12 3999")).toBe(767008);
+    });
+});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 15 2017 22:59:51 GMT+1000 (AUS Eastern Standard Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
