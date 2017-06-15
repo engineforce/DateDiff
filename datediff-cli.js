@@ -26,10 +26,11 @@ if (!options.dates || options.dates.length != 2) {
 }
 else {
     try {
-        console.log(datediff(options.dates[0], options.dates[1]));
+        let [date1, date2] = options.dates;
+        console.log(`${date1}, ${date2}, ${datediff(date1, date2)}`);
     }
-    catch(ex) {
-        console.log(ex.message);        
+    catch (ex) {
+        console.log(ex.message);
         process.exit(1);
     }
 }

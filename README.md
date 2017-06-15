@@ -20,15 +20,15 @@ datediff("29 02 1990", "01 03 9999");     // generate error
 ## Run in CLI
 
 ```sh
-node datediff-cli "01 01 1990" "01 01 1990"     # 0
-node datediff-cli "01 01 1990" "01 03 2017"     # 9921
-node datediff-cli "01 01 1990" "01 03 9999"     # 2925286
+node datediff-cli "01 01 1990" "01 01 1990"     # 01 01 1990, 01 01 1990, 0
+node datediff-cli "01 01 1990" "01 03 2017"     # 01 01 1990, 01 03 2017, 9921
+node datediff-cli "01 01 1990" "01 03 9999"     # 01 01 1990, 01 03 9999, 2925286
 node datediff-cli "29 02 1990" "01 03 9999"     # generate error
 ```
 
 ## Notes:
 
-It requires ES6 support, i.e., Node.js v6.10.0+
+It requires ES6 support, e.g., Node.js v6.10.0+
 
 
 
