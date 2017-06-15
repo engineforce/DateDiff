@@ -1,10 +1,10 @@
 function datediff(dateText1, dateText2) {
     if (!isValidDate(dateText1)) {
-        throw new Error(`date 1: ${dateText1} is not a valid input, expect string: DD MM YYYY`);
+        throw new Error(`date1: '${dateText1}' is not a valid input, expect string: DD MM YYYY`);
     }
 
     if (!isValidDate(dateText2)) {
-        throw new Error(`date 2: ${dateText2} is not a valid input, expect string: DD MM YYYY`);
+        throw new Error(`date2: '${dateText2}' is not a valid input, expect string: DD MM YYYY`);
     }
 
     let date1 = parseDateText(dateText1);
