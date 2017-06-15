@@ -1,4 +1,4 @@
-function dateDiff(dateText1, dateText2) {
+function datediff(dateText1, dateText2) {
     if (!isValidDate(dateText1)) {
         throw new Error(`date 1: ${dateText1} is not a valid input, expect string: DD MM YYYY`);
     }
@@ -113,4 +113,4 @@ function isLeapYear(year) {
     return year % 4 == 0;
 }
 
-module.exports = dateDiff;
+module.exports = datediff;
