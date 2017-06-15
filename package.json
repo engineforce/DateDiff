@@ -1,0 +1,29 @@
+{
+  "name": "date-diff",
+  "version": "1.0.0",
+  "description": "Compute the difference between the two dates in days",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "cover": "node node_modules/istanbul/lib/cli.js cover node_modules/jasmine/bin/jasmine.js",
+    "debug": "node-debug jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engineforce/DateDiff.git"
+  },
+  "keywords": [
+    "date",
+    "diff"
+  ],
+  "author": "Paul Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/engineforce/DateDiff/issues"
+  },
+  "homepage": "https://github.com/engineforce/DateDiff#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.6.0"
+  }
+}
