@@ -1,5 +1,5 @@
 TN:
-SF:E:\Git\Misc\DateDiff\spec\DateDiffSpec.js
+SF:D:\Git\Misc\DateDiff\spec\DateDiffSpec.js
 FN:3,(anonymous_1)
 FN:4,(anonymous_2)
 FN:70,(anonymous_3)
@@ -111,7 +111,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:E:\Git\Misc\DateDiff\index.js
+SF:D:\Git\Misc\DateDiff\index.js
 FNF:0
 FNH:0
 DA:1,1
@@ -122,7 +122,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:E:\Git\Misc\DateDiff\datediff.js
+SF:D:\Git\Misc\DateDiff\datediff.js
 FN:1,datediff
 FN:20,getDays
 FN:32,isValidDate
