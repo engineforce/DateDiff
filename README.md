@@ -1,4 +1,7 @@
 # DateDiff
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/engineforce/DateDiff.svg)](https://greenkeeper.io/)
+
 Compute the difference between the two dates in days
 
 ## How to run?
